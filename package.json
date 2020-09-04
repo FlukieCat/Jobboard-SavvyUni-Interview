@@ -1,0 +1,28 @@
+{
+    "name": "savvy",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon server.js",
+        "client": "npm start --prefix client",
+        "server": "node server.js",
+        "start": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cheerio": "^1.0.0-rc.3",
+        "concurrently": "^5.3.0",
+        "config": "^3.3.1",
+        "express": "^4.17.1",
+        "jsonwebtoken": "^8.5.1",
+        "mongodb": "^3.6.1",
+        "mongoose": "^5.10.2",
+        "request": "^2.88.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.4"
+    }
+}
